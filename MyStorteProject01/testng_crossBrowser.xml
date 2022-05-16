@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyStore Automation Test Suite">
+  <test name="ChromeTest">
+  <parameter name="browser" value="chrome"></parameter>
+     <groups>
+       <run>
+       <include name="RegressionTest"></include>
+       </run>
+      </groups>
+    <classes>
+      <class name="com.mystore.testcases.IndexPageTest"/>
+      </classes>
+  </test> <!-- MyStore Test -->
+  
+   <test name="FirefoxTest">
+  <parameter name="browser" value="firefox"></parameter>
+     <groups>
+       <run>
+       <include name="RegressionTest"></include>
+       </run>
+      </groups>
+    <classes>
+       <class name="com.mystore.testcases.IndexPageTest"/>
+    </classes>
+  </test> <!-- MyStore Test -->
+  
+</suite> <!-- MyStore Automation Test Suite -->

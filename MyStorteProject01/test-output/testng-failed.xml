@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MyStore Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.mystore.utility.ListenersClass"/>
+  </listeners>
+  <test thread-count="5" name="MyStore Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mystore.testcases.AddToCartPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="addToCartTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.AddToCartPageTest -->
+    </classes>
+  </test> <!-- MyStore Test(failed) -->
+</suite> <!-- Failed suite [MyStore Automation Test Suite] -->
